@@ -1,7 +1,9 @@
 {
   "name": "hono-server",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build --target=bun --outfile=dist/server.js src",
+    "start": "bun dist/server.js"
   },
   "dependencies": {
     "hono": "^4.10.4"
